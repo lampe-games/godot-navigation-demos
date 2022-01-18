@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://3d/utils/DrawRandomPaths.tscn" type="PackedScene" id=1]
 [ext_resource path="res://3d/utils/Environment.tscn" type="PackedScene" id=2]
@@ -23,6 +23,11 @@ data = PoolVector3Array( 7.5, 0, 15, -7.5, 0, 15, 7.5, 0, -15, -7.5, 0, 15, -7.5
 
 [sub_resource type="ConcavePolygonShape" id=6]
 data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="PlaneMesh" id=7]
+size = Vector2( 15, 15 )
+subdivide_width = 49
+subdivide_depth = 49
 
 [node name="SimpleNavmeshPaths" type="Spatial"]
 
@@ -210,6 +215,11 @@ range_begin = Vector3( -15, 0, -15 )
 range_end = Vector3( 15, 0, 15 )
 speed = 100
 optimize_path = true
+
+[node name="DebugGrid" type="MeshInstance" parent="Navigation"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 7.5 )
+visible = false
+mesh = SubResource( 7 )
 
 [node name="Environment" parent="." instance=ExtResource( 2 )]
 
