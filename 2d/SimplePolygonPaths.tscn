@@ -7,7 +7,7 @@ vertices = PoolVector2Array( 285, 180, 659, 392, 587, 527, 297, 517 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 outlines = [ PoolVector2Array( 285, 180, 659, 392, 587, 527, 297, 517 ) ]
 
-[node name="SimplePolygonPaths" type="Node2D"]
+[node name="Demo" type="Node2D"]
 
 [node name="Navigation2D" type="Navigation2D" parent="."]
 __meta__ = {

@@ -7,7 +7,7 @@ vertices = PoolVector2Array( 920, 93, 31, 80, 43, 23, 991, 28, 992, 987, 919, 88
 polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 0, 3, 4, 5 ), PoolIntArray( 5, 4, 6, 7 ), PoolIntArray( 7, 6, 8, 9 ), PoolIntArray( 9, 8, 10, 11 ), PoolIntArray( 11, 10, 12, 13 ), PoolIntArray( 13, 12, 14, 15 ), PoolIntArray( 15, 14, 16, 17 ), PoolIntArray( 17, 16, 18, 19 ), PoolIntArray( 19, 18, 20, 21 ), PoolIntArray( 21, 20, 22, 23 ), PoolIntArray( 23, 22, 24, 25 ), PoolIntArray( 25, 24, 26, 27 ), PoolIntArray( 27, 26, 28, 29 ), PoolIntArray( 29, 28, 30, 31 ), PoolIntArray( 31, 30, 32, 33 ), PoolIntArray( 33, 32, 34, 35 ) ]
 outlines = [ PoolVector2Array( 43, 23, 991, 28, 992, 987, 20, 992, 34, 107, 899, 116, 903, 872, 116, 878, 131, 191, 790, 199, 795, 765, 254, 766, 260, 299, 660, 304, 648, 634, 372, 633, 394, 405, 546, 414, 545, 503, 467, 505, 465, 542, 571, 540, 572, 395, 372, 386, 355, 646, 661, 645, 679, 291, 246, 283, 233, 778, 806, 784, 806, 185, 112, 175, 103, 886, 919, 888, 920, 93, 31, 80 ) ]
 
-[node name="SimplePolygonPaths" type="Node2D"]
+[node name="Demo" type="Node2D"]
 
 [node name="Navigation2D" type="Navigation2D" parent="."]
 __meta__ = {

@@ -3,7 +3,7 @@
 [ext_resource path="res://2d/assets/tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://2d/utils/DrawRandomPaths.tscn" type="PackedScene" id=2]
 
-[node name="SimplePolygonPaths" type="Node2D"]
+[node name="Demo" type="Node2D"]
 
 [node name="Navigation2D" type="Navigation2D" parent="."]
 cell_size = 1.0
