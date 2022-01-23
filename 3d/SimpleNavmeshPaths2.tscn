@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://3d/utils/DrawRandomPaths.tscn" type="PackedScene" id=1]
+[ext_resource path="res://3d/utils/Environment.tscn" type="PackedScene" id=2]
+
+[sub_resource type="NavigationMesh" id=1]
+vertices = PoolVector3Array( -56.48, 0.4, -31.84, -64.28, 0.4, -31.84, -64.28, 0.4, -24.04, -64.28, 0.4, 23.66, -64.28, 0.4, 31.76, -56.48, 0.4, 31.76, 194.02, 0.4, -24.04, 194.02, 0.4, -31.84, 185.92, 0.4, -31.84, 185.92, 0.4, 31.76, 194.02, 0.4, 31.76, 194.02, 0.4, 23.66, -64.28, 0.4, 15.86, -64.28, 0.4, 23.66, -56.48, 0.4, 31.76, -48.38, 0.4, 31.76, -48.38, 0.4, -31.84, -56.48, 0.4, -31.84, -64.28, 0.4, -24.04, -64.28, 0.4, -15.94, 185.92, 0.4, 31.76, 194.02, 0.4, 23.66, 194.02, 0.4, 15.86, 177.82, 0.4, 31.76, 194.02, 0.4, -15.94, 194.02, 0.4, -24.04, 185.92, 0.4, -31.84, 177.82, 0.4, -31.84, 56.62, 0.4, -31.84, 48.52, 0.4, -31.84, 48.52, 0.4, 31.76, 56.62, 0.4, 31.76, 113.02, 0.4, 31.76, 121.12, 0.4, 31.76, 121.12, 0.4, -31.84, 113.02, 0.4, -31.84, 16.12, 0.4, -31.84, 8.02, 0.4, -31.84, 8.02, 0.4, 31.76, 16.12, 0.4, 31.76, 104.92, 0.4, 31.76, 113.02, 0.4, 31.76, 113.02, 0.4, -31.84, 104.92, 0.4, -31.84, -48.38, 0.4, -31.84, -64.28, 0.4, -15.94, -64.28, 0.4, -8.14, -40.28, 0.4, -31.84, 194.02, 0.4, -8.14, 194.02, 0.4, -15.94, 177.82, 0.4, -31.84, 169.72, 0.4, -31.84, -64.28, 0.4, 7.76, -64.28, 0.4, 15.86, -48.38, 0.4, 31.76, -40.28, 0.4, 31.76, 177.82, 0.4, 31.76, 194.02, 0.4, 15.86, 194.02, 0.4, 7.76, 169.72, 0.4, 31.76, 96.82, 0.4, 31.76, 104.92, 0.4, 31.76, 104.92, 0.4, -31.84, 96.82, 0.4, -31.84, 88.72, 0.4, 31.76, 96.82, 0.4, 31.76, 96.82, 0.4, -31.84, 88.72, 0.4, -31.84, 24.22, 0.4, -31.84, 16.12, 0.4, -31.84, 16.12, 0.4, 31.76, 24.22, 0.4, 31.76, 32.32, 0.4, -31.84, 24.22, 0.4, -31.84, 24.22, 0.4, 31.76, 32.32, 0.4, 31.76, -64.28, 0.4, -0.0399971, -64.28, 0.4, 7.76, -40.28, 0.4, 31.76, -32.18, 0.4, 31.76, -40.28, 0.4, -31.84, -64.28, 0.4, -8.14, -64.28, 0.4, -0.0399971, -32.18, 0.4, -31.84, 169.72, 0.4, 31.76, 194.02, 0.4, 7.76, 194.02, 0.4, -0.0399971, 161.62, 0.4, 31.76, 194.02, 0.4, -0.0399971, 194.02, 0.4, -8.14, 169.72, 0.4, -31.84, 161.62, 0.4, -31.84, 40.42, 0.4, -31.84, 32.32, 0.4, -31.84, 32.32, 0.4, 31.76, 40.42, 0.4, 31.76, 80.62, 0.4, 31.76, 88.72, 0.4, 31.76, 88.72, 0.4, -31.84, 80.62, 0.4, -31.84, 48.52, 0.4, -31.84, 40.42, 0.4, -31.84, 40.42, 0.4, 31.76, 48.52, 0.4, 31.76, 72.52, 0.4, 31.76, 80.62, 0.4, 31.76, 80.62, 0.4, -31.84, 72.52, 0.4, -31.84, -64.28, 0.4, -0.0399971, -32.18, 0.4, 31.76, -24.08, 0.4, 31.76, -24.08, 0.4, -31.84, -32.18, 0.4, -31.84, -64.28, 0.4, -0.0399971, 153.52, 0.4, 31.76, 161.62, 0.4, 31.76, 194.02, 0.4, -0.0399971, 194.02, 0.4, -0.0399971, 161.62, 0.4, -31.84, 153.52, 0.4, -31.84, -64.28, 0.4, -0.0399971, -24.08, 0.4, 31.76, -15.98, 0.4, 31.76, -15.98, 0.4, -31.84, -24.08, 0.4, -31.84, -64.28, 0.4, -0.0399971, 145.42, 0.4, 31.76, 153.52, 0.4, 31.76, 194.02, 0.4, -0.0399971, 194.02, 0.4, -0.0399971, 153.52, 0.4, -31.84, 145.42, 0.4, -31.84, 145.42, 0.4, 31.76, 194.02, 0.4, -0.0399971, 145.42, 0.4, -31.84, 137.32, 0.4, -31.84, 137.32, 0.4, 31.76, -15.98, 0.4, -31.84, -64.28, 0.4, -0.0399971, -15.98, 0.4, 31.76, -7.87999, 0.4, 31.76, -7.87999, 0.4, -31.84, 56.62, 0.4, 31.76, 64.72, 0.4, 31.76, 64.72, 0.4, -31.84, 56.62, 0.4, -31.84, 64.72, 0.4, 31.76, 72.52, 0.4, 31.76, 72.52, 0.4, -31.84, 64.72, 0.4, -31.84, 129.22, 0.4, 31.76, 137.32, 0.4, 31.76, 137.32, 0.4, -31.84, 129.22, 0.4, -31.84, 0.220009, 0.4, -31.84, -7.87999, 0.4, -31.84, -7.87999, 0.4, 31.76, 0.220009, 0.4, 31.76, 121.12, 0.4, 31.76, 129.22, 0.4, 31.76, 129.22, 0.4, -31.84, 121.12, 0.4, -31.84, 8.02, 0.4, -31.84, 0.220009, 0.4, -31.84, 0.220009, 0.4, 31.76, 8.02, 0.4, 31.76 )
+polygons = [ PoolIntArray( 1, 0, 2 ), PoolIntArray( 5, 4, 3 ), PoolIntArray( 8, 7, 6 ), PoolIntArray( 11, 10, 9 ), PoolIntArray( 13, 12, 14 ), PoolIntArray( 14, 12, 15 ), PoolIntArray( 17, 16, 18 ), PoolIntArray( 18, 16, 19 ), PoolIntArray( 21, 20, 22 ), PoolIntArray( 22, 20, 23 ), PoolIntArray( 25, 24, 26 ), PoolIntArray( 26, 24, 27 ), PoolIntArray( 31, 30, 28 ), PoolIntArray( 28, 30, 29 ), PoolIntArray( 35, 34, 32 ), PoolIntArray( 32, 34, 33 ), PoolIntArray( 39, 38, 36 ), PoolIntArray( 36, 38, 37 ), PoolIntArray( 43, 42, 40 ), PoolIntArray( 40, 42, 41 ), PoolIntArray( 45, 44, 46 ), PoolIntArray( 46, 44, 47 ), PoolIntArray( 49, 48, 50 ), PoolIntArray( 50, 48, 51 ), PoolIntArray( 54, 53, 55 ), PoolIntArray( 55, 53, 52 ), PoolIntArray( 57, 56, 58 ), PoolIntArray( 58, 56, 59 ), PoolIntArray( 63, 62, 60 ), PoolIntArray( 60, 62, 61 ), PoolIntArray( 67, 66, 64 ), PoolIntArray( 64, 66, 65 ), PoolIntArray( 71, 70, 68 ), PoolIntArray( 68, 70, 69 ), PoolIntArray( 75, 74, 72 ), PoolIntArray( 72, 74, 73 ), PoolIntArray( 77, 76, 78 ), PoolIntArray( 78, 76, 79 ), PoolIntArray( 81, 80, 82 ), PoolIntArray( 82, 80, 83 ), PoolIntArray( 85, 84, 86 ), PoolIntArray( 86, 84, 87 ), PoolIntArray( 89, 88, 90 ), PoolIntArray( 90, 88, 91 ), PoolIntArray( 95, 94, 92 ), PoolIntArray( 92, 94, 93 ), PoolIntArray( 99, 98, 96 ), PoolIntArray( 96, 98, 97 ), PoolIntArray( 103, 102, 100 ), PoolIntArray( 100, 102, 101 ), PoolIntArray( 107, 106, 104 ), PoolIntArray( 104, 106, 105 ), PoolIntArray( 110, 109, 108 ), PoolIntArray( 113, 112, 111 ), PoolIntArray( 116, 115, 114 ), PoolIntArray( 119, 118, 117 ), PoolIntArray( 122, 121, 120 ), PoolIntArray( 123, 125, 124 ), PoolIntArray( 128, 127, 126 ), PoolIntArray( 131, 130, 129 ), PoolIntArray( 134, 133, 135 ), PoolIntArray( 135, 133, 132 ), PoolIntArray( 135, 132, 136 ), PoolIntArray( 137, 141, 138 ), PoolIntArray( 138, 141, 139 ), PoolIntArray( 139, 141, 140 ), PoolIntArray( 145, 144, 142 ), PoolIntArray( 142, 144, 143 ), PoolIntArray( 149, 148, 146 ), PoolIntArray( 146, 148, 147 ), PoolIntArray( 153, 152, 150 ), PoolIntArray( 150, 152, 151 ), PoolIntArray( 157, 156, 154 ), PoolIntArray( 154, 156, 155 ), PoolIntArray( 161, 160, 158 ), PoolIntArray( 158, 160, 159 ), PoolIntArray( 165, 164, 162 ), PoolIntArray( 162, 164, 163 ) ]
+
+[sub_resource type="PlaneMesh" id=2]
+
+[node name="SimpleNavmeshPaths" type="Spatial"]
+
+[node name="Navigation" type="Navigation" parent="."]
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="Navigation"]
+navmesh = SubResource( 1 )
+
+[node name="Spatial" type="Spatial" parent="Navigation/NavigationMeshInstance"]
+transform = Transform( 32.44, 0, 0, 0, 1, 0, 0, 0, 32.44, 0, 0, 0 )
+visible = false
+
+[node name="MeshInstance" type="MeshInstance" parent="Navigation/NavigationMeshInstance/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../../../..")
+
+[node name="MeshInstance2" type="MeshInstance" parent="Navigation/NavigationMeshInstance/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../../../..")
+
+[node name="MeshInstance3" type="MeshInstance" parent="Navigation/NavigationMeshInstance/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../../../..")
+
+[node name="MeshInstance4" type="MeshInstance" parent="Navigation/NavigationMeshInstance/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../../../..")
+
+[node name="DrawRandomPaths" parent="Navigation" instance=ExtResource( 1 )]
+range_begin = Vector3( -80, 0, -80 )
+range_end = Vector3( 80, 0, 80 )
+speed = 100
+optimize_path = true
+
+[node name="Environment" parent="." instance=ExtResource( 2 )]
+
+[node name="Camera" parent="Environment" index="0"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 0.999999, 0, -0.999999, -4.37114e-08, 0, 20, 0 )
+size = 90.0
+
+[editable path="Environment"]

@@ -1,7 +1,7 @@
-extends ImmediateGeometry
+extends Node2D
 
-export(Vector3) var range_begin
-export(Vector3) var range_end
+export(Vector2) var range_begin
+export(Vector2) var range_end
 export(int, 1, 999999) var speed = 1
 export(bool) var optimize_path = false
 export(bool) var clear_each_time = false
@@ -22,23 +22,23 @@ func _draw_single_path():
 	var end = _get_random_navigation_point_in_range()
 	var path = _navigation.get_simple_path(begin, end, optimize_path)
 	if path != null and path.size() > 1:
-		begin(Mesh.PRIMITIVE_LINE_STRIP)
+		var line = Line2D.new()
+		line.default_color = Color.black
+		line.width = 1
 		for point in path:
-			set_color(Color.black)
-			set_normal(Vector3(0, 1, 0))
-			add_vertex(point)
-		end()
+			line.add_point(point)
+		add_child(line)
 
 
 func _get_random_navigation_point_in_range():
-	return Vector3(
-		_rng.randf_range(range_begin.x, range_end.x),
-		range_begin.y,
-		_rng.randf_range(range_begin.z, range_end.z)
+	return Vector2(
+		_rng.randf_range(range_begin.x, range_end.x), _rng.randf_range(range_begin.y, range_end.y)
 	)
 
 
 func _on_timer_timeout():
 	if clear_each_time:
-		clear()
+		for child in get_children():
+			if not child is Timer:
+				child.queue_free()
 	_draw_single_path()
