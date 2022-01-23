@@ -10,7 +10,7 @@ polygons = [ PoolIntArray( 3, 2, 0 ), PoolIntArray( 0, 2, 1 ) ]
 [sub_resource type="PlaneMesh" id=2]
 size = Vector2( 10, 10 )
 
-[node name="SimpleNavmeshPaths" type="Spatial"]
+[node name="Demo" type="Spatial"]
 
 [node name="Navigation" type="Navigation" parent="."]
 

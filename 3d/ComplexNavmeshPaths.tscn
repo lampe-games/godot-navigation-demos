@@ -29,7 +29,7 @@ size = Vector2( 15, 15 )
 subdivide_width = 49
 subdivide_depth = 49
 
-[node name="SimpleNavmeshPaths" type="Spatial"]
+[node name="Demo" type="Spatial"]
 
 [node name="Navigation" type="Navigation" parent="."]
 

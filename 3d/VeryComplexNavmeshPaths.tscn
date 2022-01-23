@@ -13,7 +13,7 @@ agent/radius = 0.1
 top_radius = 0.05
 bottom_radius = 0.05
 
-[node name="SimpleNavmeshPaths" type="Spatial"]
+[node name="Demo" type="Spatial"]
 
 [node name="Navigation" type="Navigation" parent="."]
 

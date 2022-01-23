@@ -9,7 +9,7 @@ polygons = [ PoolIntArray( 1, 0, 2 ), PoolIntArray( 5, 4, 3 ), PoolIntArray( 8, 
 
 [sub_resource type="PlaneMesh" id=2]
 
-[node name="SimpleNavmeshPaths" type="Spatial"]
+[node name="Demo" type="Spatial"]
 
 [node name="Navigation" type="Navigation" parent="."]
 

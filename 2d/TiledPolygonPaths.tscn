@@ -6,8 +6,6 @@
 [node name="Demo" type="Node2D"]
 
 [node name="Navigation2D" type="Navigation2D" parent="."]
-cell_size = 1.0
-edge_connection_margin = 1.0
 __meta__ = {
 "_edit_lock_": true
 }
