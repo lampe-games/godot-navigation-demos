@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://3d/StaticObstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://3d/BakeOnReady.gd" type="Script" id=2]
 
 [sub_resource type="NavigationMesh" id=1]
 geometry/parsed_geometry_type = 1
@@ -20,6 +21,7 @@ subdivide_depth = 349
 points = PoolVector3Array( 175.956, -0.956284, 175.956, -175.956, -0.956284, -175.956, -175.956, -0.956284, 175.956, 175.956, -0.956284, -175.956 )
 
 [node name="Demo" type="Spatial"]
+script = ExtResource( 2 )
 
 [node name="Navigation" type="Navigation" parent="."]
 

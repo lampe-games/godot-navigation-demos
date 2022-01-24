@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://3d/StaticObstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://3d/BakeOnReady.gd" type="Script" id=2]
+
+[sub_resource type="NavigationMesh" id=3]
+vertices = PoolVector3Array( -16.6, 0.35237, -24.4, -24.4, 0.35237, -24.4, -24.4, 0.35237, -16.6, -24.4, 0.35237, -8.8, -10.3, 0.35237, -8.8, -10.3, 0.35237, -10.3, -10.3, 0.35237, -10.3, -8.5, 0.35237, -10.6, -8.5, 0.35237, -24.4, -16.6, 0.35237, -24.4, -24.4, 0.35237, -16.6, -24.4, 0.35237, -8.8, -7.3, 0.35237, -7, -1.6, 0.35237, -1, -1.3, 0.35237, -1.6, -6.7, 0.35237, -7.3, 1.1, 0.35237, -1.6, 10.4, 0.35237, -9.7, 10.4, 0.35237, -12.7, 1.7, 0.35237, -24.4, -8.5, 0.35237, -24.4, -6.7, 0.35237, -10.3, -6.7, 0.35237, -7.3, -1.3, 0.35237, -1.6, 1.1, 0.35237, -1.6, -6.7, 0.35237, -10.3, -8.5, 0.35237, -24.4, -8.5, 0.35237, -10.6, -6.7, 0.35237, -10.3, 10.4, 0.35237, -12.7, 11.9, 0.35237, -13, 11.9, 0.35237, -24.4, 1.7, 0.35237, -24.4, 1.4, 0.35237, -1, 11, 0.35237, -9.4, 10.4, 0.35237, -9.7, 1.1, 0.35237, -1.6, 24.5, 0.35237, -17.8, 24.5, 0.35237, -24.4, 18.2, 0.35237, -24.4, 13.4, 0.35237, -13, 13.7, 0.35237, -11.2, 24.5, 0.35237, -11.2, 24.5, 0.35237, -17.8, 18.2, 0.35237, -24.4, 11.9, 0.35237, -24.4, 11.9, 0.35237, -24.4, 11.9, 0.35237, -13, 13.4, 0.35237, -13, 18.2, 0.35237, 24.5, 24.5, 0.35237, 24.5, 24.5, 0.35237, 15.5, 24.5, 0.35237, -11.2, 13.7, 0.35237, -11.2, 13.4, 0.35237, -9.4, 24.5, 0.35237, -2.5, 1.4, 0.35237, 1.1, -0.0999985, 0.35237, 1.4, -0.0999985, 0.35237, 24.5, 11, 0.35237, -9.4, 1.4, 0.35237, -1, 1.4, 0.35237, 1.1, 24.5, 0.35237, -2.5, 13.4, 0.35237, -9.4, 11, 0.35237, -9.4, 24.5, 0.35237, 6.5, 12.2, 0.35237, 24.5, 18.2, 0.35237, 24.5, 24.5, 0.35237, 15.5, 5.9, 0.35237, 24.5, 12.2, 0.35237, 24.5, 24.5, 0.35237, 15.5, 24.5, 0.35237, 6.5, 11, 0.35237, -9.4, 1.4, 0.35237, 1.1, -0.0999985, 0.35237, 24.5, 5.9, 0.35237, 24.5, 24.5, 0.35237, 15.5, -1.6, 0.35237, 1.1, -1.6, 0.35237, -1, -7.3, 0.35237, -7, -10, 0.35237, -7, -0.0999985, 0.35237, 24.5, -0.0999985, 0.35237, 1.4, -1.6, 0.35237, 1.1, -10, 0.35237, -7, -10.3, 0.35237, -8.8, -24.4, 0.35237, -8.8, -24.4, 0.35237, -0.699999, -24.4, 0.35237, 16.1, -24.4, 0.35237, 24.5, -12.4, 0.35237, 24.5, -1.6, 0.35237, 1.1, -10, 0.35237, -7, -24.4, 0.35237, 7.7, -24.4, 0.35237, 16.1, -6.4, 0.35237, 24.5, -0.0999985, 0.35237, 24.5, -24.4, 0.35237, 16.1, -12.4, 0.35237, 24.5, -6.4, 0.35237, 24.5, -10, 0.35237, -7, -24.4, 0.35237, -0.699999, -24.4, 0.35237, 7.7 )
+polygons = [ PoolIntArray( 1, 0, 2 ), PoolIntArray( 5, 4, 3 ), PoolIntArray( 7, 6, 8 ), PoolIntArray( 8, 6, 9 ), PoolIntArray( 9, 6, 10 ), PoolIntArray( 10, 6, 11 ), PoolIntArray( 15, 14, 12 ), PoolIntArray( 12, 14, 13 ), PoolIntArray( 17, 16, 18 ), PoolIntArray( 18, 16, 21 ), PoolIntArray( 18, 21, 19 ), PoolIntArray( 19, 21, 20 ), PoolIntArray( 23, 22, 24 ), PoolIntArray( 24, 22, 25 ), PoolIntArray( 28, 27, 26 ), PoolIntArray( 30, 29, 31 ), PoolIntArray( 31, 29, 32 ), PoolIntArray( 36, 35, 33 ), PoolIntArray( 33, 35, 34 ), PoolIntArray( 39, 38, 37 ), PoolIntArray( 41, 40, 42 ), PoolIntArray( 42, 40, 43 ), PoolIntArray( 43, 40, 44 ), PoolIntArray( 44, 40, 45 ), PoolIntArray( 48, 47, 46 ), PoolIntArray( 51, 50, 49 ), PoolIntArray( 53, 52, 54 ), PoolIntArray( 54, 52, 55 ), PoolIntArray( 58, 57, 56 ), PoolIntArray( 60, 59, 61 ), PoolIntArray( 63, 62, 64 ), PoolIntArray( 64, 62, 65 ), PoolIntArray( 68, 67, 66 ), PoolIntArray( 71, 70, 69 ), PoolIntArray( 76, 75, 77 ), PoolIntArray( 77, 75, 72 ), PoolIntArray( 72, 75, 74 ), PoolIntArray( 72, 74, 73 ), PoolIntArray( 79, 78, 80 ), PoolIntArray( 80, 78, 81 ), PoolIntArray( 84, 83, 82 ), PoolIntArray( 86, 85, 87 ), PoolIntArray( 87, 85, 88 ), PoolIntArray( 91, 90, 89 ), PoolIntArray( 96, 95, 97 ), PoolIntArray( 97, 95, 94 ), PoolIntArray( 97, 94, 92 ), PoolIntArray( 92, 94, 93 ), PoolIntArray( 100, 99, 98 ), PoolIntArray( 103, 102, 101 ) ]
+geometry/parsed_geometry_type = 2
+geometry/collision_mask = 4294967295
+geometry/source_geometry_mode = 2
+geometry/source_group_name = "navmesh"
+
+[sub_resource type="SpatialMaterial" id=2]
+flags_transparent = true
+albedo_color = Color( 1, 1, 1, 0.1 )
+
+[sub_resource type="PlaneMesh" id=4]
+size = Vector2( 50, 50 )
+
+[sub_resource type="ConcavePolygonShape" id=6]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=5]
+
+[node name="Demo" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="Navigation" type="Navigation" parent="."]
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="Navigation"]
+navmesh = SubResource( 3 )
+
+[node name="Ground" type="MeshInstance" parent="Navigation/NavigationMeshInstance" groups=["navmesh"]]
+material_override = SubResource( 2 )
+mesh = SubResource( 4 )
+
+[node name="StaticObstacle" parent="Navigation" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.91736, 0, 0 )
+
+[node name="StaticObstacle2" parent="Navigation" instance=ExtResource( 1 )]
+transform = Transform( 0.80915, 0, 0.587602, 0, 1, 0, -0.587602, 0, 0.80915, -9.27168, 0, 8.96223 )
+
+[node name="StaticObstacle4" type="StaticBody" parent="Navigation" groups=["navmesh"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0124, 1, -11.2011 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Navigation/StaticObstacle4"]
+shape = SubResource( 6 )
+
+[node name="StaticObstacle3" type="MeshInstance" parent="Navigation" groups=["navmesh"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.516, 1, -8.771 )
+mesh = SubResource( 5 )
