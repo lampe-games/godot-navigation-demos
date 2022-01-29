@@ -1,12 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://3d/StaticObstacle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://3d/BakeOnReady.gd" type="Script" id=2]
+[ext_resource path="res://3d/utils/Environment.tscn" type="PackedScene" id=3]
 
 [sub_resource type="NavigationMesh" id=1]
 geometry/parsed_geometry_type = 1
 geometry/collision_mask = 4294967295
-agent/max_slope = 70.0
 
 [sub_resource type="SpatialMaterial" id=2]
 flags_transparent = true
@@ -2693,3 +2693,11 @@ transform = Transform( 0.335435, 0, -0.942063, 0, 1, 0, 0.942063, 0, 0.335435, -
 
 [node name="StaticObstacle22" parent="Navigation/NavigationMeshInstance/ObstacleGroups/Group39" instance=ExtResource( 1 )]
 transform = Transform( 0.766807, 0, -0.641878, 0, 1, 0, 0.641878, 0, 0.766807, -7.79758, -2.86102e-06, 3.97668 )
+
+[node name="Environment" parent="." instance=ExtResource( 3 )]
+
+[node name="Camera" parent="Environment" index="0"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 0.999999, 0, -0.999999, -4.37114e-08, 0, 20, 0 )
+size = 400.0
+
+[editable path="Environment"]
