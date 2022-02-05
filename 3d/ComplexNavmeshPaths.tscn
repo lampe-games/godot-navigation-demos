@@ -9,6 +9,7 @@ polygons = [ PoolIntArray( 0, 2, 1 ), PoolIntArray( 4, 3, 5 ), PoolIntArray( 5, 
 geometry/parsed_geometry_type = 1
 geometry/collision_mask = 4294967295
 agent/radius = 0.1
+detail/sample_max_error = 1.0
 
 [sub_resource type="PlaneMesh" id=2]
 size = Vector2( 15, 30 )
