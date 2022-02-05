@@ -5,6 +5,7 @@ export(Vector2) var range_end
 export(int, 1, 999999) var speed = 1
 export(bool) var optimize_path = false
 export(bool) var clear_each_time = false
+export(int, 1, 10) var line_width = 1
 
 var _rng = RandomNumberGenerator.new()
 
@@ -24,7 +25,7 @@ func _draw_single_path():
 	if path != null and path.size() > 1:
 		var line = Line2D.new()
 		line.default_color = Color.black
-		line.width = 1
+		line.width = line_width
 		for point in path:
 			line.add_point(point)
 		add_child(line)

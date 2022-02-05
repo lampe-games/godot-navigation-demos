@@ -17,4 +17,6 @@ tile_data = PoolIntArray( 0, 0, 0, 14, 0, 0, 65536, 0, 0, 65537, 0, 0, 65549, 0,
 
 [node name="DrawRandomPaths" parent="Navigation2D" instance=ExtResource( 2 )]
 range_end = Vector2( 1000, 50 )
-speed = 100
+speed = 10
+clear_each_time = true
+line_width = 5
