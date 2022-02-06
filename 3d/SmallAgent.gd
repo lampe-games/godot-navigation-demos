@@ -11,7 +11,6 @@ onready var _navi = find_node("NavigationAgent")
 
 
 func _ready():
-	_navi.set_navigation(find_parent("Navigation"))
 	_navi.connect("velocity_computed", self, "_on_safe_velocity_computed")
 	_navi.connect("target_reached", self, "_on_target_reached")
 	move_forward(distance_to_go)
