@@ -12,6 +12,7 @@ func _ready():
 				continue
 			var point = navigation_child
 			var closest_point = navigation.get_closest_point(point.position)
+			print("{0}/{1}: {2} -> {3}".format([navigation, point, point.position, closest_point]))
 			add_child(_make_path(point.position, closest_point))
 
 
