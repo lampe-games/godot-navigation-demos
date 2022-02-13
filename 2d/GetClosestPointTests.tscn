@@ -385,3 +385,6 @@ position = Vector2( 475, 225 )
 
 [node name="Position2D72" type="Position2D" parent="Navigation2D3"]
 position = Vector2( 475, 200 )
+
+[node name="Position2D73" type="Position2D" parent="Navigation2D3"]
+position = Vector2( 775, 275 )
