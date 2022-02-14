@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://2d/utils/DrawRandomPaths.tscn" type="PackedScene" id=2]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 216, 107, 687, 174, 502, 268, 352, 250, 543, 546, 453, 406, 195, 569, 328, 396 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 2, 1, 4, 5 ), PoolIntArray( 6, 0, 3, 7 ), PoolIntArray( 4, 6, 7, 5 ) ]
+outlines = [ PoolVector2Array( 216, 107, 687, 174, 543, 546, 195, 569 ), PoolVector2Array( 352, 250, 502, 268, 453, 406, 328, 396 ) ]
+
+[node name="Demo" type="Node2D"]
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+navpoly = SubResource( 1 )
+
+[node name="DrawRandomPaths" parent="Navigation2D" instance=ExtResource( 2 )]
+range_end = Vector2( 1000, 1000 )
+speed = 100
+optimize_path = true
