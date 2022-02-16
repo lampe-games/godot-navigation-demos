@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://2d/GetSimplePathTests.gd" type="Script" id=1]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 50, 50, 100, 50, 100, 100, 50, 100 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( 50, 50, 100, 50, 100, 100, 50, 100 ) ]
+
+[sub_resource type="NavigationPolygon" id=2]
+vertices = PoolVector2Array( 100, 50, 150, 50, 150, 100, 100, 100 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( 100, 50, 150, 50, 150, 100, 100, 100 ) ]
+
+[sub_resource type="NavigationPolygon" id=3]
+vertices = PoolVector2Array( 100, 100, 150, 100, 150, 150, 100, 150 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( 100, 100, 150, 100, 150, 150, 100, 150 ) ]
+
+[node name="Demo" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+navpoly = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NavigationPolygonInstance2" type="NavigationPolygonInstance" parent="Navigation2D"]
+navpoly = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NavigationPolygonInstance3" type="NavigationPolygonInstance" parent="Navigation2D"]
+navpoly = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Begin" type="Position2D" parent="Navigation2D"]
+position = Vector2( 25, 75 )
+
+[node name="End" type="Position2D" parent="Navigation2D"]
+position = Vector2( 125, 175 )
+
+[node name="Line2D17" type="Line2D" parent="Navigation2D"]
+position = Vector2( -700, -300 )
+points = PoolVector2Array( 750, 375, 800, 375, 825, 400, 825, 450 )
+width = 4.0
+default_color = Color( 0, 1, 0, 1 )
