@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=2]
+
+[sub_resource type="CubeMesh" id=3]
+
+[sub_resource type="BoxShape" id=1]
+
+[sub_resource type="CapsuleMesh" id=4]
+
+[sub_resource type="CapsuleShape" id=2]
+
+[sub_resource type="CylinderMesh" id=5]
+
+[sub_resource type="CylinderShape" id=6]
+
+[sub_resource type="SphereMesh" id=7]
+
+[sub_resource type="SphereShape" id=8]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Box" type="MeshInstance" parent="."]
+mesh = SubResource( 3 )
+
+[node name="StaticBody" type="StaticBody" parent="Box"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Box/StaticBody"]
+shape = SubResource( 1 )
+
+[node name="Capsule" type="MeshInstance" parent="."]
+mesh = SubResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="Capsule"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Capsule/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="Cylinder" type="MeshInstance" parent="."]
+mesh = SubResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="Cylinder"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Cylinder/StaticBody"]
+shape = SubResource( 6 )
+
+[node name="Sphere" type="MeshInstance" parent="."]
+mesh = SubResource( 7 )
+
+[node name="StaticBody" type="StaticBody" parent="Sphere"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Sphere/StaticBody"]
+shape = SubResource( 8 )
