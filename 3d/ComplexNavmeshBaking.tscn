@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://3d/StaticObstacle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://3d/BakeOnReady.gd" type="Script" id=2]
@@ -19,6 +19,12 @@ subdivide_depth = 349
 
 [sub_resource type="ConvexPolygonShape" id=4]
 points = PoolVector3Array( 175.956, -0.956284, 175.956, -175.956, -0.956284, -175.956, -175.956, -0.956284, 175.956, 175.956, -0.956284, -175.956 )
+
+[sub_resource type="CapsuleShape" id=5]
+
+[sub_resource type="CylinderShape" id=6]
+
+[sub_resource type="SphereShape" id=7]
 
 [node name="Demo" type="Spatial"]
 script = ExtResource( 2 )
@@ -2693,6 +2699,26 @@ transform = Transform( 0.335435, 0, -0.942063, 0, 1, 0, 0.942063, 0, 0.335435, -
 
 [node name="StaticObstacle22" parent="Navigation/NavigationMeshInstance/ObstacleGroups/Group39" instance=ExtResource( 1 )]
 transform = Transform( 0.766807, 0, -0.641878, 0, 1, 0, 0.641878, 0, 0.766807, -7.79758, -2.86102e-06, 3.97668 )
+
+[node name="CustomGroup" type="Spatial" parent="Navigation/NavigationMeshInstance/ObstacleGroups"]
+
+[node name="CustomObstacle" type="StaticBody" parent="Navigation/NavigationMeshInstance/ObstacleGroups/CustomGroup" groups=["navmesh"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6772, 3.8147e-06, -32.3034 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Navigation/NavigationMeshInstance/ObstacleGroups/CustomGroup/CustomObstacle"]
+shape = SubResource( 5 )
+
+[node name="CustomObstacle2" type="StaticBody" parent="Navigation/NavigationMeshInstance/ObstacleGroups/CustomGroup" groups=["navmesh"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.2929, 3.8147e-06, -24.7004 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Navigation/NavigationMeshInstance/ObstacleGroups/CustomGroup/CustomObstacle2"]
+shape = SubResource( 6 )
+
+[node name="CustomObstacle3" type="StaticBody" parent="Navigation/NavigationMeshInstance/ObstacleGroups/CustomGroup" groups=["navmesh"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5701, 3.8147e-06, -23.5741 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Navigation/NavigationMeshInstance/ObstacleGroups/CustomGroup/CustomObstacle3"]
+shape = SubResource( 7 )
 
 [node name="Environment" parent="." instance=ExtResource( 3 )]
 
