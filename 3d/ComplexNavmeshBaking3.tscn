@@ -22,6 +22,7 @@ points = PoolVector3Array( 175.956, -0.956284, 175.956, -175.956, -0.956284, -17
 
 [node name="Demo" type="Spatial"]
 script = ExtResource( 2 )
+baking_delay_frames = 1
 
 [node name="Navigation" type="Navigation" parent="."]
 
