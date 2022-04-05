@@ -1,0 +1,100 @@
+[gd_scene load_steps=11 format=3 uid="uid://dgvn6qa10ayw0"]
+
+[ext_resource type="PackedScene" uid="uid://b2dlrm0lfb03t" path="res://3d/utils/Environment.tscn" id="1_6tpfy"]
+[ext_resource type="Script" path="res://3d/GetSimplePathTests.gd" id="1_88hh5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1c0us"]
+vertex_color_use_as_albedo = true
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_cak1x"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_aim1t"]
+vertices = PackedVector3Array(11.5, 0.4, -2.1, 15.4, 0.4, -2.4, 15.4, 0.4, -5.4, 8.5, 0.4, -5.4, 8.5, 0.4, 5.4, 11.5, 0.4, 5.4, 11.5, 0.4, -2.1, 8.5, 0.4, -5.4, -4.4, 0.4, -4.5, -4.4, 0.4, 4.5, 4.6, 0.4, 4.5, 4.6, 0.4, -4.5)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(11, 10, 8), PackedInt32Array(8, 10, 9)]
+agent/radius = 0.6
+detail/sample_max_error = 5.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wom1c"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_y0wxc"]
+size = Vector2(10, 10)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xreb6"]
+size = Vector2(4, 4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8wgn0"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_i86hh"]
+top_radius = 0.1
+bottom_radius = 0.1
+
+[node name="Demo" type="Node3D"]
+script = ExtResource( "1_88hh5" )
+
+[node name="ImmediateGeometry" type="MeshInstance3D" parent="."]
+material_override = SubResource( "StandardMaterial3D_1c0us" )
+mesh = SubResource( "ImmediateMesh_cak1x" )
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navmesh = SubResource( "NavigationMesh_aim1t" )
+
+[node name="SourceGeometry" type="MeshInstance3D" parent="NavigationRegion3D"]
+material_override = SubResource( "StandardMaterial3D_wom1c" )
+mesh = SubResource( "PlaneMesh_y0wxc" )
+
+[node name="SourceGeometry2" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 4)
+material_override = SubResource( "StandardMaterial3D_wom1c" )
+mesh = SubResource( "PlaneMesh_xreb6" )
+
+[node name="SourceGeometry3" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+material_override = SubResource( "StandardMaterial3D_wom1c" )
+mesh = SubResource( "PlaneMesh_xreb6" )
+
+[node name="SourceGeometry4" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4)
+material_override = SubResource( "StandardMaterial3D_wom1c" )
+mesh = SubResource( "PlaneMesh_xreb6" )
+
+[node name="SourceGeometry5" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -4)
+material_override = SubResource( "StandardMaterial3D_wom1c" )
+mesh = SubResource( "PlaneMesh_xreb6" )
+
+[node name="PathsToDraw" type="Node3D" parent="."]
+
+[node name="Path" type="Node3D" parent="PathsToDraw"]
+
+[node name="Begin" type="MeshInstance3D" parent="PathsToDraw/Path"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.955, 0, 6.057)
+material_override = SubResource( "StandardMaterial3D_8wgn0" )
+mesh = SubResource( "CylinderMesh_i86hh" )
+
+[node name="End" type="MeshInstance3D" parent="PathsToDraw/Path"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.53, 0, -5.58)
+material_override = SubResource( "StandardMaterial3D_8wgn0" )
+mesh = SubResource( "CylinderMesh_i86hh" )
+
+[node name="Path2" type="Node3D" parent="PathsToDraw"]
+
+[node name="Begin" type="MeshInstance3D" parent="PathsToDraw/Path2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.681, 0, 7.433)
+material_override = SubResource( "StandardMaterial3D_8wgn0" )
+mesh = SubResource( "CylinderMesh_i86hh" )
+
+[node name="End" type="MeshInstance3D" parent="PathsToDraw/Path2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.151, 0, -4.065)
+material_override = SubResource( "StandardMaterial3D_8wgn0" )
+mesh = SubResource( "CylinderMesh_i86hh" )
+
+[node name="Environment" parent="." instance=ExtResource( "1_6tpfy" )]
+
+[node name="Camera3D" parent="Environment" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 5, 10, 0)
+size = 20.0
+
+[editable path="Environment"]
