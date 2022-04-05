@@ -1,4 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://c0x25p5lxtgrh"]
+[gd_scene load_steps=9 format=3 uid="uid://c0x25p5lxtgrh"]
+
+[ext_resource type="PackedScene" uid="uid://b2dlrm0lfb03t" path="res://3d/utils/Environment.tscn" id="1_hfm4i"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_eycva"]
 geometry/parsed_geometry_type = 2
@@ -68,9 +70,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.68066)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.97025, 0, 0)
 multimesh = SubResource( "MultiMesh_2ydsm" )
 
-[node name="Environment" type="Node3D" parent="."]
+[node name="Environment" parent="." instance=ExtResource( "1_hfm4i" )]
 
-[node name="Camera3D" type="Camera3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 10, 0)
-projection = 1
-size = 55.0
+[editable path="Environment"]
