@@ -1,0 +1,484 @@
+[gd_scene load_steps=29 format=3 uid="uid://einf2di2h462"]
+
+[ext_resource type="Script" path="res://2d/GetSimplePathTests.gd" id="1_bsesc"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_u6svm"]
+vertices = PackedVector2Array(100, 100, 200, 100, 200, 200, 100, 200)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(100, 100, 200, 100, 200, 200, 100, 200)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_fisk1"]
+vertices = PackedVector2Array(350, 100, 450, 100, 450, 200, 350, 200)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(350, 100, 450, 100, 450, 200, 350, 200)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_g7e00"]
+vertices = PackedVector2Array(600, 100, 700, 100, 700, 200, 600, 200)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(600, 100, 700, 100, 700, 200, 600, 200)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_vmf4v"]
+vertices = PackedVector2Array(850, 100, 950, 100, 950, 200, 850, 200)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(850, 100, 950, 100, 950, 200, 850, 200)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_hcjgh"]
+vertices = PackedVector2Array(1100, 100, 1200, 100, 1200, 200, 1100, 200)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1100, 100, 1200, 100, 1200, 200, 1100, 200)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_n1p53"]
+vertices = PackedVector2Array(1350, 100, 1450, 100, 1450, 200, 1350, 200)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1350, 100, 1450, 100, 1450, 200, 1350, 200)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_3ibxx"]
+vertices = PackedVector2Array(1600, 100, 1700, 100, 1700, 200, 1600, 200)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1600, 100, 1700, 100, 1700, 200, 1600, 200)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_o0m80"]
+vertices = PackedVector2Array(100, 450, 100, 350, 300, 350, 200, 450, 300, 550, 200, 550)
+polygons = [PackedInt32Array(0, 1, 2, 3), PackedInt32Array(3, 2, 4, 5)]
+outlines = [PackedVector2Array(100, 350, 300, 350, 300, 550, 200, 550, 200, 450, 100, 450)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_q2una"]
+vertices = PackedVector2Array(450, 450, 450, 350, 650, 350, 550, 450, 650, 550, 550, 550)
+polygons = [PackedInt32Array(0, 1, 2, 3), PackedInt32Array(3, 2, 4, 5)]
+outlines = [PackedVector2Array(450, 350, 650, 350, 650, 550, 550, 550, 550, 450, 450, 450)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_6o0vy"]
+vertices = PackedVector2Array(800, 450, 800, 350, 1000, 350, 900, 450, 1000, 550, 900, 550)
+polygons = [PackedInt32Array(0, 1, 2, 3), PackedInt32Array(3, 2, 4, 5)]
+outlines = [PackedVector2Array(800, 350, 1000, 350, 1000, 550, 900, 550, 900, 450, 800, 450)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ndwmh"]
+vertices = PackedVector2Array(1150, 450, 1150, 350, 1350, 350, 1250, 450, 1350, 550, 1250, 550)
+polygons = [PackedInt32Array(0, 1, 2, 3), PackedInt32Array(3, 2, 4, 5)]
+outlines = [PackedVector2Array(1150, 350, 1350, 350, 1350, 550, 1250, 550, 1250, 450, 1150, 450)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_d2nq1"]
+vertices = PackedVector2Array(1500, 450, 1500, 350, 1700, 350, 1600, 450, 1700, 550, 1600, 550)
+polygons = [PackedInt32Array(0, 1, 2, 3), PackedInt32Array(3, 2, 4, 5)]
+outlines = [PackedVector2Array(1500, 350, 1700, 350, 1700, 550, 1600, 550, 1600, 450, 1500, 450)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_70kyq"]
+vertices = PackedVector2Array(100, 700, 200, 700, 200, 800, 100, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(100, 700, 200, 700, 200, 800, 100, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_wgsfd"]
+vertices = PackedVector2Array(200, 700, 300, 700, 300, 800, 200, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(200, 700, 300, 700, 300, 800, 200, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_vov6e"]
+vertices = PackedVector2Array(200, 800, 300, 800, 300, 900, 200, 900)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(200, 800, 300, 800, 300, 900, 200, 900)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_2lgb1"]
+vertices = PackedVector2Array(450, 700, 550, 700, 550, 800, 450, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(450, 700, 550, 700, 550, 800, 450, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_vms2g"]
+vertices = PackedVector2Array(550, 700, 650, 700, 650, 800, 550, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(550, 700, 650, 700, 650, 800, 550, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_1scji"]
+vertices = PackedVector2Array(550, 800, 650, 800, 650, 900, 550, 900)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(550, 800, 650, 800, 650, 900, 550, 900)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_orlek"]
+vertices = PackedVector2Array(800, 700, 900, 700, 900, 800, 800, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(800, 700, 900, 700, 900, 800, 800, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_heyfa"]
+vertices = PackedVector2Array(900, 700, 1000, 700, 1000, 800, 900, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(900, 700, 1000, 700, 1000, 800, 900, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_001w1"]
+vertices = PackedVector2Array(900, 800, 1000, 800, 1000, 900, 900, 900)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(900, 800, 1000, 800, 1000, 900, 900, 900)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_o0scp"]
+vertices = PackedVector2Array(1150, 700, 1250, 700, 1250, 800, 1150, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1150, 700, 1250, 700, 1250, 800, 1150, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_twyx5"]
+vertices = PackedVector2Array(1250, 700, 1350, 700, 1350, 800, 1250, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1250, 700, 1350, 700, 1350, 800, 1250, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_m4j6s"]
+vertices = PackedVector2Array(1250, 800, 1350, 800, 1350, 900, 1250, 900)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1250, 800, 1350, 800, 1350, 900, 1250, 900)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ww4wc"]
+vertices = PackedVector2Array(1500, 700, 1600, 700, 1600, 800, 1500, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1500, 700, 1600, 700, 1600, 800, 1500, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_hp2wt"]
+vertices = PackedVector2Array(1600, 700, 1700, 700, 1700, 800, 1600, 800)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1600, 700, 1700, 700, 1700, 800, 1600, 800)]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_8gjsx"]
+vertices = PackedVector2Array(1600, 800, 1700, 800, 1700, 900, 1600, 900)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+outlines = [PackedVector2Array(1600, 800, 1700, 800, 1700, 900, 1600, 900)]
+
+[node name="Demo" type="Node2D"]
+script = ExtResource( "1_bsesc" )
+metadata/_edit_lock_ = true
+
+[node name="NavigationRegions" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_u6svm" )
+
+[node name="NavigationRegion2D2" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_fisk1" )
+
+[node name="NavigationRegion2D3" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_g7e00" )
+
+[node name="NavigationRegion2D4" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_vmf4v" )
+
+[node name="NavigationRegion2D5" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_hcjgh" )
+
+[node name="NavigationRegion2D6" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_n1p53" )
+
+[node name="NavigationRegion2D18" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_3ibxx" )
+
+[node name="NavigationRegion2D7" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_o0m80" )
+
+[node name="NavigationRegion2D8" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_q2una" )
+
+[node name="NavigationRegion2D9" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_6o0vy" )
+
+[node name="NavigationRegion2D10" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_ndwmh" )
+
+[node name="NavigationRegion2D11" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_d2nq1" )
+
+[node name="NavigationRegion2D12" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_70kyq" )
+
+[node name="NavigationRegion2D13" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_wgsfd" )
+
+[node name="NavigationRegion2D14" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_vov6e" )
+
+[node name="NavigationRegion2D15" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_2lgb1" )
+
+[node name="NavigationRegion2D16" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_vms2g" )
+
+[node name="NavigationRegion2D17" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_1scji" )
+
+[node name="NavigationRegion2D19" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_orlek" )
+
+[node name="NavigationRegion2D20" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_heyfa" )
+
+[node name="NavigationRegion2D21" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_001w1" )
+
+[node name="NavigationRegion2D22" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_o0scp" )
+
+[node name="NavigationRegion2D23" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_twyx5" )
+
+[node name="NavigationRegion2D24" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_m4j6s" )
+
+[node name="NavigationRegion2D25" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_ww4wc" )
+
+[node name="NavigationRegion2D26" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_hp2wt" )
+
+[node name="NavigationRegion2D27" type="NavigationRegion2D" parent="NavigationRegions"]
+navpoly = SubResource( "NavigationPolygon_8gjsx" )
+
+[node name="PathsToDraw" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="Path" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path"]
+position = Vector2(50, 150)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path"]
+position = Vector2(100, 50)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path"]
+points = PackedVector2Array(100, 150, 100, 100)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path2" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path2"]
+position = Vector2(300, 150)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path2"]
+position = Vector2(400, 50)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path2"]
+points = PackedVector2Array(350, 150, 400, 100)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path3" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path3"]
+position = Vector2(550, 150)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path3"]
+position = Vector2(750, 50)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path3"]
+points = PackedVector2Array(600, 150, 700, 100)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path4" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path4"]
+position = Vector2(800, 150)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path4"]
+position = Vector2(1000, 150)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path4"]
+points = PackedVector2Array(850, 150, 950, 150)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path5" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path5"]
+position = Vector2(1050, 150)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path5"]
+position = Vector2(1250, 250)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path5"]
+points = PackedVector2Array(1100, 150, 1200, 200)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path6" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path6"]
+position = Vector2(1300, 150)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path6"]
+position = Vector2(1400, 250)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path6"]
+points = PackedVector2Array(1350, 150, 1400, 200)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path7" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path7"]
+position = Vector2(1550, 150)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path7"]
+position = Vector2(1600, 250)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path7"]
+points = PackedVector2Array(1600, 150, 1600, 200)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path8" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path8"]
+position = Vector2(50, 400)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path8"]
+position = Vector2(350, 500)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path8"]
+points = PackedVector2Array(100, 400, 250, 400, 300, 500)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path9" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path9"]
+position = Vector2(400, 400)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path9"]
+position = Vector2(700, 600)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path9"]
+points = PackedVector2Array(450, 400, 600, 400, 650, 550)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path10" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path10"]
+position = Vector2(750, 400)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path10"]
+position = Vector2(950, 600)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path10"]
+points = PackedVector2Array(800, 400, 950, 400, 950, 550)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path11" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path11"]
+position = Vector2(1100, 400)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path11"]
+position = Vector2(1200, 600)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path11"]
+points = PackedVector2Array(1150, 400, 1300, 400, 1250, 550)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path12" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path12"]
+position = Vector2(1450, 400)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path12"]
+position = Vector2(1600, 500)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path12"]
+points = PackedVector2Array(1500, 400, 1650, 400, 1600, 500)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path13" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path13"]
+position = Vector2(50, 750)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path13"]
+position = Vector2(350, 850)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path13"]
+points = PackedVector2Array(100, 750, 200, 750, 300, 850)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path14" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path14"]
+position = Vector2(400, 750)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path14"]
+position = Vector2(700, 950)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path14"]
+points = PackedVector2Array(450, 750, 550, 750, 600, 800, 650, 900)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path15" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path15"]
+position = Vector2(750, 750)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path15"]
+position = Vector2(950, 950)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path15"]
+points = PackedVector2Array(800, 750, 900, 750, 950, 800, 950, 900)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path16" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path16"]
+position = Vector2(1100, 750)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path16"]
+position = Vector2(1200, 950)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path16"]
+points = PackedVector2Array(1150, 750, 1250, 750, 1300, 800, 1250, 900)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Path17" type="Node2D" parent="PathsToDraw"]
+metadata/_edit_lock_ = true
+
+[node name="Begin" type="Position2D" parent="PathsToDraw/Path17"]
+position = Vector2(1450, 750)
+
+[node name="End" type="Position2D" parent="PathsToDraw/Path17"]
+position = Vector2(1600, 850)
+
+[node name="Line2D" type="Line2D" parent="PathsToDraw/Path17"]
+points = PackedVector2Array(1500, 750, 1600, 750, 1650, 800, 1600, 850)
+width = 4.0
+default_color = Color(0, 1, 0, 1)
+metadata/_edit_lock_ = true
