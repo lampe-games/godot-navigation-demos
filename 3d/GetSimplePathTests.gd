@@ -1,5 +1,6 @@
 extends Node3D
 
+@export var optimize := false
 @onready var lines = get_node("ImmediateGeometry").mesh  # find_node not working?
 
 
@@ -10,7 +11,7 @@ func _ready():
 		var end_point = path_node.get_node("End")
 		assert(begin_point and end_point)
 		var map_rid = get_world_3d().get_navigation_map()
-		var path = NavigationServer3D.map_get_path(map_rid, begin_point.transform.origin, end_point.transform.origin, false)
+		var path = NavigationServer3D.map_get_path(map_rid, begin_point.transform.origin, end_point.transform.origin, optimize)
 		_draw_path(path)
 
 
