@@ -1,6 +1,7 @@
 extends Node3D
 
 @export var baking_delay_frames := 0
+@export var baking_delay_ms := 0.0
 
 var _baking_begin_time_ms = null
 
@@ -9,6 +10,8 @@ var _baking_begin_time_ms = null
 
 func _ready():
 	# TODO: wait N idle frames
+	if baking_delay_ms > 0:
+		await get_tree().create_timer(baking_delay_ms).timeout
 	_baking_begin_time_ms = Time.get_ticks_msec()
 	_navigation_region_3d.bake_finished.connect(_on_bake_finished)
 	_navigation_region_3d.bake_navigation_mesh()

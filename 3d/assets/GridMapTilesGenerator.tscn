@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://vhjqs2qvgney"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_aou76"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_do34w"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_t7srs"]
+radius = 1.0
+height = 4.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pvary"]
+radius = 1.0
+height = 4.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_sd6qn"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 4.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rgqyi"]
+height = 4.0
+radius = 1.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_t04u8"]
+radius = 2.0
+height = 4.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_b75al"]
+radius = 2.0
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Box" type="MeshInstance3D" parent="."]
+mesh = SubResource( "BoxMesh_aou76" )
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/StaticBody3D"]
+shape = SubResource( "BoxShape3D_do34w" )
+
+[node name="Capsule" type="MeshInstance3D" parent="."]
+mesh = SubResource( "CapsuleMesh_t7srs" )
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Capsule"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Capsule/StaticBody3D"]
+shape = SubResource( "CapsuleShape3D_pvary" )
+
+[node name="Cylinder" type="MeshInstance3D" parent="."]
+mesh = SubResource( "CylinderMesh_sd6qn" )
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cylinder"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cylinder/StaticBody3D"]
+shape = SubResource( "CylinderShape3D_rgqyi" )
+
+[node name="Sphere" type="MeshInstance3D" parent="."]
+mesh = SubResource( "SphereMesh_t04u8" )
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sphere"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sphere/StaticBody3D"]
+shape = SubResource( "SphereShape3D_b75al" )
