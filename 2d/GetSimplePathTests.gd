@@ -25,4 +25,14 @@ func _make_path(path):
 	line.width = 2
 	for point in path:
 		line.add_point(point)
+		var point_marker = Line2D.new()
+		point_marker.default_color = Color.black
+		point_marker.width = 2
+		point_marker.add_point(point + Vector2(-5, -5))
+		point_marker.add_point(point)
+		point_marker.add_point(point + Vector2(5, -5))
+		point_marker.add_point(point + Vector2(-5, 5))
+		point_marker.add_point(point)
+		point_marker.add_point(point + Vector2(5, 5))
+		line.add_child(point_marker)
 	return line
