@@ -32,3 +32,4 @@ target_desired_distance = 0.5
 radius = 0.3
 max_neighbors = 30
 time_horizon = 0.5
+avoidance_enabled = true

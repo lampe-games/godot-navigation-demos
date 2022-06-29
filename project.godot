@@ -18,6 +18,10 @@ config/icon="res://icon.png"
 window/size/width=1920
 window/size/height=1080
 
+[global]
+
+dep=false
+
 [physics]
 
 common/enable_pause_aware_picking=true
